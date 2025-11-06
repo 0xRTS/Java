@@ -45,5 +45,6 @@ public class es1{
 		
 		System.out.println("Tempo trascorso: " + diff/60 + " ore e " + diff%60 + " minuti");
 		
+		console.close();
 	}
 }

@@ -56,6 +56,6 @@ public class es2{
 		int diff = (ore2*60+minuti2)-(ore1*60+minuti1); //differenza in minuti
 		
 		System.out.println("Tempo trascorso: " + diff/60 + " ore e " + diff%60 + " minuti");
-		
+		console.close();
 	}
 }
