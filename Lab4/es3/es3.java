@@ -1,7 +1,7 @@
 public class es3{
 	public static void main(String[] args){
-		double v1 = 10000.00001;
-		double v2 = 10000.0000;
+		double v1 = 12;
+		double v2 = 10;
 		
 		System.out.println("v1: " + v1 + "\nv2: " + v2);
 		System.out.println("\nDifferiscono di un valore inferiore a 10^-6: " + approxDiff(v1, v2));

@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class EncodeCeasar{
+public class DecodeCeasar{
 	public static void main(String[] args){
 		Scanner console = new Scanner(System.in);
 		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		String cifrata="";
+		String decifrata="";
 		int key;
 		int sup;
 		
-		System.out.print("Inserire una stringa: ");
+		System.out.print("Inserire una stringa cifrata: ");
 		String stringa = console.nextLine();
 		stringa = stringa.toUpperCase();
 		
@@ -18,15 +18,15 @@ public class EncodeCeasar{
 		}while(key<=0 || key>=26);
 		
 		for(int i = 0; i<stringa.length(); i++){
-			if(chars.indexOf(stringa.charAt(i)) + key +1 > 26){ //+1 in quanto indexOf restituisce la posizione a partire da 0
-				sup = (chars.indexOf(stringa.charAt(i)) + key) - 26;
-				cifrata += chars.charAt(sup);				
+			if(chars.indexOf(stringa.charAt(i)) - key < 0){
+				sup = (chars.indexOf(stringa.charAt(i)) - key) + 26;
+				decifrata += chars.charAt(sup);				
 			}else{
-				cifrata += chars.charAt(chars.indexOf(stringa.charAt(i)) + key);				
+				decifrata += chars.charAt(chars.indexOf(stringa.charAt(i)) - key);				
 			}
 		}
 		
-		System.out.println("Stringa cifrata: " + cifrata);
+		System.out.println("Stringa decifrata: " + decifrata);
 		console.close();
 	}
 }
