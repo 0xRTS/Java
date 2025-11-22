@@ -14,8 +14,6 @@ public class es6{
 		System.out.println(findMax(a));
 		System.out.println(findPos(b, 33));
 		System.out.println(findPos(b, 9));
-
-		
 	}
 
 	public static int[] resize(int[] arr, int len){
