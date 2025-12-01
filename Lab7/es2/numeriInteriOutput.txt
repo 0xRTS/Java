@@ -1,0 +1,4 @@
+Inserire una sequenza di numeri interi: 
+non intero
+non intero
+Interi: 6
