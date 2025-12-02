@@ -12,11 +12,22 @@ public class RecFib{
 			n = Integer.parseInt(args[0]);
 		}
 		
+		//long start = System.currentTimeMillis();
+		long start = System.nanoTime();
+		
 		System.out.println("Il " + n + "-esimo numero della serie di Fib. è: " + recursiveFib(n));
 		
+		//long end = System.currentTimeMillis();
+		long end = System.nanoTime();
+		
+		System.out.println("Tempo esecuzione metodo: " + Math.round((end - start)/1000000.0) +  " millisecondi");
 	}
 	
 	public static long recursiveFib(int n){
+		if(n<0){
+			throw new IllegalArgumentException();
+		}
+		
 		if(n == 0){
 			return 0;
 		}
