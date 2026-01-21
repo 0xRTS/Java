@@ -1,0 +1,59 @@
+MATH:
+
+int n = (int)(a + (1+b-a)*Math.random());
+
+Math.pow(x, y); //x alla y
+Math.sqrt(x); //radice quadrata di x (square root)
+
+----------------------------------------------------------------
+
+STRINGHE:
+
+stringa.substring(n1, n2);
+stringa.substring(n1);
+
+stringa.toUpperCase();
+stringa.toLowerCase();
+
+stringa.length();
+
+s1.equals(s2);
+s1.equalsIgnoreCase(s2);
+
+s1.compareTo(s2); //confronto lessicografico
+
+----------------------------------------------------------------
+
+CONVERSIONI:
+
+Integer.toString(num_intero);
+Double.toString(num_double);
+
+Integer.parseInt(stringa);
+Double.parseDouble(stringa);
+
+In caso di errore -> eccezione e arresto del programma
+Così come nel caso di errore per lunghezza errata di stringa
+
+----------------------------------------------------------------
+
+METODI LETTURA DATI:
+
+hasNext();
+hasNextLine();
+hasNextInt();
+hasNextDouble();
+
+Questi non "consumano" il dato, bensì lo fanno:
+
+next();
+nextLine();
+nextInt();
+nextDouble();
+
+----------------------------------------------------------------
+
+System.arraycopy(from_a1, a1_position1, to_a2, a2_position2, count); 
+//clonazione di un array (entrambi devono esistere)
+
+

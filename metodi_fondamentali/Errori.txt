@@ -1,0 +1,132 @@
+
+TIPOLOGIE DI ERRORI NELLA PROGRAMMAZIONE:
+
+Gli errori si suddividono principalmente in tre categorie:
+
+1. Errori di compilazione
+2. Errori a runtime (eccezioni)
+3. Errori logici
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+1. ERRORI DI COMPILAZIONE
+   (Sintattici e Semantici)
+
+Sono errori rilevati dal compilatore prima dell’esecuzione del programma.
+La sintassi rigida dei linguaggi serve proprio a individuare immediatamente questi problemi.
+
+---
+
+1.1) Errori Sintattici
+
+Riguardano la violazione delle regole grammaticali del linguaggio.
+
+Esempi:
+
+* Simboli non definiti
+  Scrivere in modo errato una parola chiave o un oggetto
+  (es. System.aut invece di System.out)
+
+* Errori di punteggiatura
+  Dimenticare una virgoletta di chiusura, una parentesi o un punto e virgola
+
+---
+
+1.2) Errori Semantici di Compilazione
+
+Riguardano il significato delle istruzioni rispetto alle regole del linguaggio.
+
+Esempi:
+
+* Incompatibilità di tipi
+  Assegnare un valore a una variabile di tipo meno capiente senza cast
+  (es. int assegnato a byte)
+
+* Variabili locali non inizializzate
+  In Java non è possibile leggere una variabile locale senza valore iniziale
+
+* Modifica di costanti
+  Tentare di assegnare un nuovo valore a una variabile dichiarata final
+
+* Codice non raggiungibile
+  Istruzioni scritte dopo un break o return non condizionato
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+2. ERRORI A RUNTIME (ECCEZIONI)
+
+Si verificano durante l’esecuzione del programma.
+In Java vengono segnalati tramite il lancio di un’eccezione.
+Se non gestite, causano l’interruzione del programma.
+
+---
+
+2.1) Errori di Accesso Invalido
+
+* ArrayIndexOutOfBoundsException
+  Accesso a un indice di array fuori dai limiti
+
+* NullPointerException
+  Tentativo di usare un oggetto che contiene il riferimento null
+
+---
+
+2.2) Errori di Calcolo o Formato
+
+* ArithmeticException
+  Divisione intera per zero
+
+* NumberFormatException
+  Conversione di una stringa non numerica in numero
+  (es. Integer.parseInt("abc"))
+
+---
+
+2.3) Errori di Memoria e Struttura
+
+* StackOverflowError
+  Ricorsione infinita che esaurisce lo stack dei metodi
+
+* OutOfMemoryError
+  Esaurimento della memoria disponibile della JVM
+  (es. creazione di un array troppo grande)
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+3. ERRORI LOGICI
+
+Sono i più difficili da individuare perché:
+
+* non vengono segnalati dal compilatore
+* non generano eccezioni a runtime
+
+Il programma funziona correttamente dal punto di vista tecnico, ma produce risultati errati.
+
+---
+
+3.1) Errori di Output
+
+* Messaggi stampati in modo errato
+* Errori di battitura o di formattazione
+
+---
+
+3.2) Errori nei Cicli
+
+* Cicli infiniti
+  La condizione di terminazione non viene mai raggiunta
+
+* Errori “off-by-one”
+  Limiti errati del ciclo (uso scorretto di < o <=)
+
+---
+
+3.3) Problemi di Rappresentazione
+
+* Overflow silente
+  In Java il superamento dei limiti degli interi non genera eccezioni
+
+* Arrotondamento in virgola mobile
+  Il confronto tra double con == può fallire per problemi di precisione
+
+
