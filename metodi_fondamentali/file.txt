@@ -53,7 +53,33 @@ nextDouble();
 
 ----------------------------------------------------------------
 
+ARRAY:
+array.length; //per array normali
+array[0].length; //per matrici
 System.arraycopy(from_a1, a1_position1, to_a2, a2_position2, count); 
 //clonazione di un array (entrambi devono esistere)
+
+----------------------------------------------------------------
+
+REINDIRIZZAMENTO:
+
+java exec < input.txt 
+
+java exec > output.txt // se non esiste viene creato, se esiste viene sovrascritto
+java exec >> output.txt // non sovrascrive
+
+java exec < input.txt > output.txt //combinati
+
+----------------------------------------------------------------
+
+ECCEZIONI:
+
+try{
+	
+}catch(Exception exc){
+
+}
+
+throw new IllegalArgumentException();
 
 
