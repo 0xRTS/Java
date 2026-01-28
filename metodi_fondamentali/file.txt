@@ -80,28 +80,18 @@ try{
 
 }
 
-throw new IllegalArgumentException();
-
+throw new IllegalArgumentException(); //argomento inatteso (valore inserito minore di 0 ad esempio)
 
 ----------------------------------------------------------------
 
-LETTURA/SCRITTURA FILE: 
+CLASSI:
 
-Lettura:
-FileReader reader = new FileReader("input.txt");
+oggetto instanceof classe -> true o false
 
-try{//obblugatorio per la chiusura
-  reader.close();
-}catch(IOException e){
-....
-}
-
-gestire anche FileNotFoundException
-
-Scrittura:
-PrintWriter writer = nee PrintWriter("output.txt");
-
-scrittura comporta perdita dei dati preesistenti
-se il file non esiste viene creato
-
+interface 
+implements 
+extends 
+super.metodo();
+super.costruttore();
+super.vEsemplareSuperclasse();
 
